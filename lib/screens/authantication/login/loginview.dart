@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 import 'package:todoapp/screens/authantication/login/loginviewmodel.dart';
-import 'package:todoapp/screens/authantication/signin/signinview.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({super.key});
@@ -52,8 +51,6 @@ class LoginView extends StatelessWidget {
                                 viewModel.passwordshow =
                                     !viewModel.passwordshow;
                                 viewModel.rebuildUi();
-                                
-                                
                               },
                             ),
                           ),
@@ -68,12 +65,7 @@ class LoginView extends StatelessWidget {
                       child: ElevatedButton(
                           onPressed: () {}, child: const Text("Login"))),
                   TextButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const SignInView()));
-                      },
+                      onPressed: () {},
                       child: const Text("Register Your Account!"))
                 ],
               ),
